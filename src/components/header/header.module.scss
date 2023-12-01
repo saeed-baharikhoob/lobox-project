@@ -1,0 +1,113 @@
+.box {
+  height: 72px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 2fr;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(132, 147, 168, 0.1);
+  justify-items: center;
+  align-items: center;
+  padding: 0 20px;
+
+  &__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    justify-items: start;
+    align-items: center;
+  }
+
+  &__search {
+    display: flex;
+    position: relative;
+    width: 75%;
+
+    &__icon {
+      position: absolute;
+      box-sizing: border-box;
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);
+    }
+
+    input {
+      color: rgb(7, 34, 82);
+      width: 100%;
+      height: 100%;
+      font-size: 15px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(132, 147, 168, 0.2);
+      border-image: initial;
+      padding: 10px 10px 10px 16px;
+      background: padding-box rgb(255, 255, 255);
+      border-radius: 20px;
+
+      &::placeholder {
+        color: rgba(132, 147, 168, 0.5);
+      }
+
+      &:focus {
+        border-color: #5384EE;
+        outline: 0;
+      }
+    }
+    &__resultBox {
+      top: 40px;
+      left: 0;
+      background: white;
+      width: 96%;
+      border: 1px solid transparent;
+      padding: 16px ;
+      z-index: 11;
+      position: absolute;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      max-height: 620px;
+      border-radius: 0 0 12px 12px;
+      &__label{
+        color: rgba(72, 83, 99, 0.6);
+        font-size: 15px;
+        line-height: 21px;
+      }
+      &__background {
+        z-index: 10;
+        top: 72px;
+        left: 72px;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.50);
+      }
+      &__line{
+        margin: 8px;
+        color: transparent;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(132, 147, 168, 0.2);;
+      }
+      &__categoryBox{
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+      }
+    }
+
+  }
+
+  &__tools {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 100%;
+    justify-items: end;
+    align-items: center;
+
+    &__user {
+      width: 22px;
+      height: 22px;
+      padding: 5px;
+      border-radius: 100%;
+      background-color: rgb(236, 236, 236);
+    }
+  }
+
+
+}

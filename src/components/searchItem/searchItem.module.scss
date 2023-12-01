@@ -1,0 +1,26 @@
+.box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 8.5px 8px;
+  cursor: pointer;
+  &:hover{
+    border-radius: 5px;
+    background: #E6E9EE;
+  }
+  &__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(132, 147, 168, 0.15);
+  }
+  &__label{
+    color: rgb(7, 34, 82);
+    font-size: 15px;
+  }
+}

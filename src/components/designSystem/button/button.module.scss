@@ -1,0 +1,50 @@
+.button{
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 4px;
+  gap:5px;
+  transition: all 200ms ease-in-out 0s;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  user-select: none;
+  border: none;
+  &__primary{
+    background: #5384ee;
+    color: #ffffff;
+    &:hover{
+      background-color: rgb(63, 115, 227);
+    }
+  }
+  &__secondary{
+    background: #5384ee1a;
+    color: #5384ee;
+    &:hover{
+      background-color: rgba(83, 132, 238, 0.2);
+    }
+
+  }
+  &__text{
+    background: transparent;
+    color: #485363;
+    font-size: 15px;
+    &:hover{
+      background-color: rgba(132, 147, 168, 0.2);
+    }
+
+  }
+  &__circleButton{
+    background: transparent;
+    border-radius: 100%;
+    width: fit-content;
+    height: fit-content;
+    &:hover{
+      background-color: rgba(132, 147, 168, 0.2);
+    }
+  }
+  &__iconOnTop{
+    flex-direction: column;
+  }
+}

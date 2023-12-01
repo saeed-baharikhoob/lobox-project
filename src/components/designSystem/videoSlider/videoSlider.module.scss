@@ -1,0 +1,37 @@
+.videoSlider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    &--right{
+      right: 0;
+    }
+
+
+    &:hover {
+      background: #55ffffff;
+    }
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+

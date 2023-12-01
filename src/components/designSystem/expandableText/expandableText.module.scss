@@ -1,0 +1,28 @@
+.expandableText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+
+  &__smallText {
+    overflow: visible;
+    max-height: 200px;
+  }
+
+  &__fullText {
+    overflow: visible;
+    height: auto;
+  }
+
+  &__readMore {
+    position: absolute;
+    right: 5px;
+    bottom: -7px;
+    background: white;
+    padding: 5px 10px;
+    color: rgb(83, 132, 238);
+    cursor: pointer;
+
+  }
+}

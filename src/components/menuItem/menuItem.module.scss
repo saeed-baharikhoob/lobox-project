@@ -1,0 +1,12 @@
+.box{
+
+  button{
+    font-size: 10px;
+  }
+  &__divider{
+    color: transparent;
+    width: 100%;
+    min-height: 1px;
+    background-color: rgba(132, 147, 168, 0.2);
+  }
+}
